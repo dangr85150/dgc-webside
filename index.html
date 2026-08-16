@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DGC Webside - Location de Site Web Professionnel</title>
+  <!-- FAVICON (Logo dans l'onglet du navigateur) -->
+<link rel="icon" type="image/png" href="assets/DGC_icon_transparent_background.png">
+  <link rel="stylesheet" href="style.css">
+  <!-- SDK EmailJS pour le formulaire de contact -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+</head>
+
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header id="top" class="header">
+    <div class="logo-container">
+      <!-- La petite vague seule reste dans le header -->
+      <img src="assets/DGC_icon_transparent_background.png" alt="Logo DGC" class="header-icon">
+      <span class="brand-name">DGC WEBSIDE</span>
+    </div>
+    <nav class="nav">
+      <a href="#avantages" class="nav-link">Comment ça marche ?</a>
+      <a href="#templates" class="nav-link">Templates</a>
+      <a href="#tarifs" class="nav-link">Tarifs</a>
+      <a href="#contact" class="btn btn-outline">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-brand-logo">
+        <!-- STRUCTURE DU PODIUM LUMINEUX -->
+        <div class="hero-logo-podium-wrapper">
+          <div class="hero-logo-circle-badge">
+            <img src="assets/DGC_logo_transparent_background.png" alt="DGC Webside Logo" class="hero-logo-inside">
+          </div>
+        </div>
+      </div>
+
+      <h1 class="hero-title">VOTRE SITE WEB<br> <span class="text-gradient">SUR MESURE</span>.</h1>
+      <p class="hero-subtitle">Votre présence professionnelle sans souci, clé en main,<span class="price-highlight"> à
+          partir de 39€ / mois.</span></p>
+      <div class="hero-buttons">
+        <a href="#templates" class="btn btn-primary">VOIR NOS TEMPLATES</a>
+        <a href="#contact" class="btn btn-outline">CONTACTER UN EXPERT</a>
+      </div>
+    </div>
+
+    <div class="hero-mockup">
+      <div class="glass-card">
+        <div class="browser-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+        </div>
+
+        <div class="browser-body">
+          <!-- Zone Carrousel -->
+          <div class="carousel-container">
+            <div class="carousel-slide active" data-category="artisan">
+              <img src="assets/ebeniste.png" alt="Site Artisan Ébéniste">
+            </div>
+            <div class="carousel-slide" data-category="restaurant">
+              <img src="assets/bistrot.png" alt="Site Restaurant">
+            </div>
+            <div class="carousel-slide" data-category="association">
+              <img src="assets/association.png" alt="Site Association">
+            </div>
+            <div class="carousel-slide" data-category="services">
+              <img src="assets/comptable.png" alt="Site Services">
+            </div>
+          </div>
+
+          <!-- Boutons / Tags de sélection -->
+          <div class="mockup-tags">
+            <button class="tag active" data-target="artisan">Artisan</button>
+            <button class="tag" data-target="restaurant">Restaurant</button>
+            <button class="tag" data-target="association">Association</button>
+            <button class="tag" data-target="services">Services</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: AVANTAGES -->
+  <section class="section bg-alt" id="avantages">
+    <div class="section-title">
+      <h2>Pourquoi choisir <span class="text-gradient">notre formule</span> ?</h2>
+      <p>Débarrassez-vous des frais exorbitants et profitez d'un site clé en main.</p>
+    </div>
+
+    <div class="split-advantages">
+      <!-- COLONNE VISUELLE GAUCHE -->
+      <div class="advantages-visual">
+        <!-- Sphère lumineuse en arrière-plan -->
+        <div class="glowing-orb"></div>
+
+        <div class="feature-mockup">
+          <div class="mockup-header">
+            <span class="status-dot"></span>
+            <span class="mockup-tag">SÉRÉNITÉ TOTALE</span>
+          </div>
+
+          <!-- Logo DGC visuel au centre -->
+          <div class="visual-badge">
+            <img src="assets/DGC_icon_transparent_background.png" alt="Vague DGC Webside" class="badge-logo-wave">
+          </div>
+
+          <h3>Tout est inclus dans votre abonnement</h3>
+          <p>Gestion technique, hébergement, mises à jour et sécurité zéro stress.</p>
+        </div>
+      </div>
+
+      <!-- COLONNE LISTE DYNAMIQUE (Sans boîtes/cartes) -->
+      <div class="advantages-list">
+
+        <div class="advantage-item">
+          <div class="advantage-icon">🚀</div>
+          <div class="advantage-content">
+            <h3>Abonnement sans surprise</h3>
+            <p>Conservez votre trésorerie active. Pas de gros chèque de départ, juste une tarification mensuelle fixe et
+              transparente.</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <div class="advantage-icon">🔧</div>
+          <div class="advantage-content">
+            <h3>Maintenance & Sécurité</h3>
+            <p>Hébergement haute performance, nom de domaine, certificat SSL et sauvegardes entièrement gérés.</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <div class="advantage-icon">✏️</div>
+          <div class="advantage-content">
+            <h3>Modifications incluses</h3>
+            <p>Mises à jour de vos textes, photos et tarifs directement prises en charge sans frais cachés.</p>
+          </div>
+        </div>
+
+        <div class="advantage-item">
+          <div class="advantage-icon">⚡</div>
+          <div class="advantage-content">
+            <h3>Lancement rapide</h3>
+            <p>Un design moderne et optimisé pour votre activité, mis en ligne en quelques jours seulement.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: TEMPLATES (Format Showroom immersif) -->
+  <section class="section" id="templates">
+    <div class="section-title">
+      <h2>Nos modèles de <span class="text-gradient">Templates</span></h2>
+      <p>Des designs pensés sur-mesure pour chaque secteur d'activité.</p>
+    </div>
+
+    <div class="showroom-container">
+
+      <!-- 1. LES ONGLETS (Sélection par secteur) -->
+      <div class="showroom-tabs">
+        <button class="tab-btn active" onclick="switchTemplate(event, 'template-artisan')">
+          <span class="tab-icon">🏗️</span> Artisan / BTP
+        </button>
+        <button class="tab-btn" onclick="switchTemplate(event, 'template-resto')">
+          <span class="tab-icon">🍽️</span> Restauration
+        </button>
+        <button class="tab-btn" onclick="switchTemplate(event, 'template-services')">
+          <span class="tab-icon">💼</span> Services & Asso
+        </button>
+      </div>
+
+      <!-- 2. CONTENU DU TEMPLATE 1 : ARTISAN -->
+      <div class="showroom-content active" id="template-artisan">
+        <div class="showroom-grid">
+          <!-- Fenêtre de navigateur dynamique -->
+          <div class="template-preview-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url">demo.dgc-webside.fr/batisseur</div>
+            </div>
+            <div class="browser-screen">
+              <!-- Remplace par l'image de ton template BTP -->
+              <img src="assets/btp-img.jpg" alt="Template Bâtisseur" class="scrollable-img">
+              <span class="live-tag">⚡ Performance 99%</span>
+            </div>
+          </div>
+
+          <div class="showroom-details">
+            <span class="showroom-tag">BÂTISSEUR</span>
+            <h3>Template "Bâtisseur"</h3>
+            <p>Idéal pour électriciens, plombiers, peintres et artisans du BTP. Une mise en avant claire de vos
+              réalisations et une incitation directe à la demande de devis.</p>
+
+            <ul class="feature-bullets">
+              <li><span>✓</span> Formulaire de devis express sur-mesure</li>
+              <li><span>✓</span> Galerie dynamique Avant / Après</li>
+              <li><span>✓</span> Zone d'intervention & avis clients certifiés</li>
+            </ul>
+
+            <div class="template-actions">
+              <a href="https://www.dgc-webside.fr/index.html" target="_blank" class="btn-primary">Tester la démo ↗</a>
+              <a href="#contact" class="btn-secondary">Choisir ce modèle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. CONTENU DU TEMPLATE 2 : RESTAURATION -->
+      <div class="showroom-content" id="template-resto">
+        <div class="showroom-grid">
+          <div class="template-preview-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url">demo.dgc-webside.fr/gourmet</div>
+            </div>
+            <div class="browser-screen">
+              <!-- Remplace par l'image de ton template Resto -->
+              <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Template Gourmet"
+                class="scrollable-img">
+              <span class="live-tag">📱 100% Mobile Ready</span>
+            </div>
+          </div>
+
+          <div class="showroom-details">
+            <span class="showroom-tag">GOURMET</span>
+            <h3>Template "Gourmet"</h3>
+            <p>Pensé pour la restauration et les métiers de bouche. Intègre la présentation de vos menus en ligne, des
+              photos haute définition et un système de réservation de table.</p>
+
+            <ul class="feature-bullets">
+              <li><span>✓</span> Menu interactif QR Code & Click & Collect</li>
+              <li><span>✓</span> Module de réservation sans commission</li>
+              <li><span>✓</span> Intégration Google Maps & Horaires dynamiques</li>
+            </ul>
+
+            <div class="template-actions">
+              <a href="https://demo.dgc-webside.fr/gourmet" target="_blank" class="btn-primary">Tester la démo ↗</a>
+              <a href="#contact" class="btn-secondary">Choisir ce modèle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. CONTENU DU TEMPLATE 3 : SERVICES -->
+      <div class="showroom-content" id="template-services">
+        <div class="showroom-grid">
+          <div class="template-preview-frame">
+            <div class="browser-bar">
+              <div class="browser-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="browser-url">https://lexica-avocat.fr/</div>
+            </div>
+            <div class="browser-screen">
+              <!-- Remplace par l'image de ton template Services -->
+              <img src="assets/NewLexicaFullScreen.png" alt="Template ProServices" class="scrollable-img">
+              <span class="live-tag">🔒 Conforme RGPD</span>
+            </div>
+          </div>
+
+          <div class="showroom-details">
+            <span class="showroom-tag">PROSERVICES</span>
+            <h3>Template "ProServices"</h3>
+            <p>Conçu pour consultants, prestataires et associations. Présentation fluide de votre équipe, de vos
+              prestations et prise de rendez-vous simplifiée.</p>
+
+            <ul class="feature-bullets">
+              <li><span>✓</span> Prise de rendez-vous en ligne synchronisée</li>
+              <li><span>✓</span> Présentation de l'équipe et compétences</li>
+              <li><span>✓</span> Section FAQ & Tarification claire</li>
+            </ul>
+
+            <div class="template-actions">
+              <a href="https://lexica-avocat.fr/" target="_blank" class="btn-primary">Tester la démo ↗</a>
+              <a href="#contact" class="btn-secondary">Choisir ce modèle</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- SECTION 4: TARIFS -->
+  <section class="section" id="tarifs">
+    <div class="section-title">
+      <h2>Des formules <span class="text-gradient">simples & claires</span></h2>
+      <p>Sans surprise, sans frais cachés.</p>
+    </div>
+
+    <div class="pricing-container">
+
+      <!-- CARTE FORMULE ESSENTIELLE -->
+      <div class="pricing-card">
+        <div class="card-header">
+          <h3>Formule Essentielle</h3>
+          <span class="format-badge">Format Landing Page</span>
+        </div>
+
+        <div class="card-price">
+          <div class="price">39€ <span>/mois</span></div>
+          <div class="setup-fee">+ 149€ Pack Lancement <span class="fee-type">(frais uniques)</span></div>
+        </div>
+
+        <!-- BADGE VERT "ENGAGEMENT 12 MOIS" -->
+        <div class="badge-green-wrapper">
+          <span class="badge-green">✨ Engagement 12 mois • Tout inclus</span>
+        </div>
+
+        <ul class="price-features">
+          <li>Site Vitrine One-Page complet</li>
+          <li>Design responsive & personnalisé</li>
+          <li>Nom de domaine inclus (.fr ou .com)</li>
+          <li>Hébergement rapide & sécurisé (HTTPS)</li>
+          <li>Support & Maintenance technique inclus</li>
+          <li>Modifications de contenu incluses (textes, photos, horaires)</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-outline full-width card-btn">Choisir cette formule</a>
+      </div>
+
+      <!-- CARTE FORMULE BUSINESS -->
+      <div class="pricing-card popular">
+        <div class="popular-badge">Le plus populaire</div>
+
+        <div class="card-header">
+          <h3>Formule Business</h3>
+          <span class="format-badge">Site Multi-pages</span>
+        </div>
+
+        <div class="card-price">
+          <div class="price">69€ <span>/mois</span></div>
+          <div class="setup-fee">+ 249€ Pack Lancement <span class="fee-type">(frais uniques)</span></div>
+        </div>
+
+        <!-- BADGE VERT "ENGAGEMENT 12 MOIS" -->
+        <div class="badge-green-wrapper">
+          <span class="badge-green">✨ Engagement 12 mois • Tout inclus</span>
+        </div>
+
+        <ul class="price-features">
+          <li>Tout de la formule Essentielle</li>
+          <li>Site jusqu'à 5 pages</li>
+          <li>Fiche Google Business Profile</li>
+          <li>Optimisation SEO local avancée</li>
+          <li>2h de modifications / mois</li>
+        </ul>
+
+        <a href="#contact" class="btn btn-primary full-width card-btn">Choisir cette formule</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION CONTACT IMMERSIVE -->
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="contact-wrapper">
+
+        <!-- CÔTÉ GAUCHE : INFOS & RASSURANCE -->
+        <div class="contact-info-card">
+          <div class="availability-badge">
+            <span class="status-pulse"></span>
+            <span>Disponible pour de nouveaux projets</span>
+          </div>
+
+          <h2>Parlons de votre <span class="text-gradient">projet web</span></h2>
+          <p class="contact-desc">
+            Une question sur nos abonnements ? Besoin d'un conseil pour votre futur site ? Laissez-nous un message, nous
+            vous recontactons dans la journée.
+          </p>
+
+          <div class="contact-details">
+
+            <!-- Point 1 : Rapidité (Chrono) -->
+            <div class="contact-item">
+              <div class="contact-icon">⏱️</div>
+              <div>
+                <h4>Mise en ligne rapide</h4>
+                <p>Votre site opérationnel en quelques jours</p>
+              </div>
+            </div>
+
+            <!-- Point 2 : Sécurité / Tout Inclus (Bouclier) -->
+            <div class="contact-item">
+              <div class="contact-icon">🛡️</div>
+              <div>
+                <h4>Formule Tout Inclus</h4>
+                <p>Hébergement, maintenance & suivi (engagement 12 mois)</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CÔTÉ DROIT : FORMULAIRE INTERACTIF (GLASSMORPHISM) -->
+        <div class="contact-form-container">
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Votre Nom / Entreprise</label>
+              <input type="text" id="name" name="name" required placeholder="ex: Jean Dupont">
+            </div>
+
+            <div class="form-group">
+              <label for="email">Adresse Email</label>
+              <input type="email" id="email" name="email" required placeholder="contact@email.fr">
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Téléphone (Optionnel)</label>
+              <input type="tel" id="phone" name="phone" placeholder="06 12 34 56 78">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Votre Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Message..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary btn-submit">
+              <span>Envoyer mon message</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER MODERNISÉ DGC WEBSIDE -->
+  <footer class="footer">
+    <div class="footer-content">
+
+      <div class="footer-brand">
+        <div class="footer-brand-wrapper">
+          <a href="#top" class="footer-logo-link">
+            <img src="assets/DGC_logo_transparent_background.png" alt="DGC Webside" class="footer-logo-img">
+          </a>
+          <div class="footer-brand-text">
+            <span class="footer-brand-title">DGC <span>Webside</span></span>
+            <p class="footer-tagline">Création & Location de sites web pour indépendants et PME.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-info">
+        <p>&copy; 2026 DGC Webside. Tous droits réservés.</p>
+<div class="footer-links">
+    <a href="mentions-legales.html">Mentions Légales</a> | 
+    <a href="politique-de-confidentialite.html">Politique de Confidentialité</a> | 
+    <a href="#" id="open-cookie-settings">Gestion des cookies</a>
+  </div>
+      </div>
+
+      <div class="footer-back-to-top">
+        <a href="#top" class="btn-top" aria-label="Retour en haut de page">↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BANDEAU COOKIES -->
+<div id="cookie-banner" class="cookie-banner hidden">
+  <div class="cookie-content">
+    <p>
+      🍪 Nous utilisons des cookies strictement nécessaires au bon fonctionnement du site. Pour en savoir plus, consultez notre 
+      <a href="politique-de-confidentialite.html" class="cookie-link">Politique de Confidentialité</a>.
+    </p>
+    <div class="cookie-buttons">
+      <button id="cookie-decline" class="btn btn-cookie-decline">Refuser</button>
+      <button id="cookie-accept" class="btn btn-cookie-accept">Accepter</button>
+    </div>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
